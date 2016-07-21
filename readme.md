@@ -1,43 +1,45 @@
-## @joegesualdo/react-range-slider [![Build Status](https://travis-ci.org/joegesualdo/react-range-slider.svg?branch=master)](https://travis-ci.org/joegesualdo/react-range-slider)
+## react-range-slider [![Build Status](https://travis-ci.org/joegesualdo/react-range-slider.svg?branch=master)](https://travis-ci.org/joegesualdo/react-range-slider)
 > A range slider implemented in React
-
-## Highlights
-
-- Highlight 1
-- Highlight 2
-- Highlight 3
 
 ## Install
 ```
-$ npm install --save @joegesualdo/react-range-slider 
+$ npm install --save @joegesualdo/react-range-slider
 ```
+
+![react-range-slider-demo](https://github.com/joegesualdo/react-range-slider/raw/master/demo.gif)
 
 ## Usage
 ```javascript
-var @joegesualdo/reactRangeSlider = require("@joegesualdo/reactRangeSlider").default
+import RangeSlider from '@joegesualdo/react/range-slider'
 
-// insert code example here
+<RangeSlider
+  width={300}
+  lineColor='blue'
+  leftColor='black'
+  rightColor='black'
+  onStart={function(){console.log("Started!!!")}}
+  onStop={function(){console.log("Stop!!!")}}
+  onSlideMin ={function(pos){console.log(pos)}}
+  onSlideMax ={function(pos){console.log(pos)}}
+>
+  <div style={
+    {
+      border: '1px solid #aaa',
+      background: '#fff',
+      borderRadius: '100%',
+      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+      cursor: 'pointer',
+      height: 24,
+      outline: 'none',
+      width: 24,
+    }
+  }></div>
+</RangeSlider>
 ```
 
 ## Test
 ```
 $ npm test
-```
-## API
-### `methodName(arg1, arg2)`
-> What does this method do?
-
-| Name | Type | Description |
-|------|------|-------------|
-| arg1 | `Array` | Test description|
-| arg2 | `String` | Test description|
-
-Returns: `Array`, of things
-
-```javascript
-var @joegesualdo/reactRangeSlider = require("@joegesualdo/react-range-slider").default
-
-// insert method example here
 ```
 ## Build
 ```
@@ -45,7 +47,7 @@ $ npm run build
 ```
 
 ## Related
-- [example-package]() - Add description of the example package here.
+- [react-slider](https://github.com/joegesualdo/react-slider) - A slider
 
 ## License
 MIT © [Joe Gesualdo]()
