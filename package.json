@@ -1,6 +1,6 @@
 {
   "name": "@joegesualdo/react-range-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A range slider implemented in React",
   "repository": "joegesualdo/react-range-slider",
   "main": "./dist/index.js",

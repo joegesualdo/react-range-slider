@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.1/bin/node',
+1 verbose cli   '/Users/jgesualdo/.npm-packages/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.9.6
+3 info using node@v6.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jgesualdo/code/node/modules/react-range-slider',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jgesualdo/.npm correctMkdir not in flight; initializing
+10 info lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: @joegesualdo/react-range-slider@0.0.1
+11 verbose lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: PATH: /Users/jgesualdo/.npm-packages/lib/node_modules/npm/bin/node-gyp-bin:/Users/jgesualdo/code/node/modules/react-range-slider/node_modules/.bin:/usr/local/Cellar/node/6.2.1/bin:/usr/local/heroku/bin:/Users/jgesualdo/.bin:/Users/jgesualdo/.npm-packages/bin:/Users/jgesualdo/.node/bin:/usr/local/n/versions/node/5.6.0/bin:~/vendor/bundle/bin:/Users/jgesualdo/.rbenv/shims:/usr/local/bin:/usr/local/sbin:~/bin:.git/safe/../../bin:/Users/jgesualdo/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/heroku/bin:/Users/jgesualdo/.bin:/Users/jgesualdo/.npm-packages/bin:/Users/jgesualdo/.node/bin:/usr/local/n/versions/node/5.6.0/bin:~/vendor/bundle/bin:/Users/jgesualdo/.rbenv/shims:/usr/local/sbin:~/bin:.git/safe/../../bin:/Users/jgesualdo/.rvm/bin:/Users/jgesualdo/code/go/bin:/usr/local/go/bin:/Users/jgesualdo/.fzf/bin:/Users/jgesualdo/.rvm/bin:/Users/jgesualdo/.rvm/bin:/Users/jgesualdo/code/go/bin:/usr/local/go/bin
+13 verbose lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: CWD: /Users/jgesualdo/code/node/modules/react-range-slider
+14 silly lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle @joegesualdo/react-range-slider@0.0.1~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package.tgz',
+16 verbose tar pack   '/Users/jgesualdo/code/node/modules/react-range-slider' ]
+17 verbose tarball /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package.tgz
+18 verbose folder /Users/jgesualdo/code/node/modules/react-range-slider
+19 verbose addLocalTarball adding from inside cache /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package.tgz
+20 verbose correctMkdir /Users/jgesualdo/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd @joegesualdo/react-range-slider@0.0.1
+22 verbose afterAdd /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/jgesualdo/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package/package.json written
+25 silly publish { name: '@joegesualdo/react-range-slider',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: 'A range slider implemented in React',
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/joegesualdo/react-range-slider.git' },
+25 silly publish   main: './dist/index.js',
+25 silly publish   scripts:
+25 silly publish    { prepublish: 'npm run build',
+25 silly publish      build: './node_modules/distify-cli/cli.js --input-file=./index.jsx --output-dir=./dist --is-react --is-module',
+25 silly publish      'dev-server': './node_modules/@joegesualdo/react-server-cli/cli.js --entry=./examples/entry.js --output=assets/bundle.js',
+25 silly publish      test: './node_modules/@joegesualdo/ava-react/cli.js test.js' },
+25 silly publish   keywords: [ 'slider', 'range', 'react' ],
+25 silly publish   author: { name: 'Joe Gesualdo', email: 'joegesualdo@gmail.com' },
+25 silly publish   license: 'MIT',
+25 silly publish   devDependencies:
+25 silly publish    { ava: '^0.15.2',
+25 silly publish      'distify-cli': '0.0.13',
+25 silly publish      'react-addons-test-utils': '^15.1.0',
+25 silly publish      '@joegesualdo/react-server-cli': '0.0.2',
+25 silly publish      enzyme: '^2.3.0',
+25 silly publish      '@joegesualdo/ava-react': '^0.0.4' },
+25 silly publish   dependencies:
+25 silly publish    { '@joegesualdo/react-slider': '0.0.3',
+25 silly publish      react: '^15.1.0',
+25 silly publish      'react-dom': '^15.1.0' },
+25 silly publish   ava: { require: [ 'babel-register' ], babel: 'inherit' },
+25 silly publish   readme: '## react-range-slider [![Build Status](https://travis-ci.org/joegesualdo/react-range-slider.svg?branch=master)](https://travis-ci.org/joegesualdo/react-range-slider)\n> A range slider implemented in React\n\n## Install\n```\n$ npm install --save @joegesualdo/react-range-slider\n```\n\n![react-range-slider-demo](https://github.com/joegesualdo/react-range-slider/raw/master/demo.gif)\n\n## Usage\n```javascript\nimport RangeSlider from \'@joegesualdo/react/range-slider\'\n\n<RangeSlider\n  width={300}\n  lineColor=\'blue\'\n  leftColor=\'black\'\n  maxPosition={20}\n  minPosition={60}\n  rightColor=\'black\'\n  onStart={function(){console.log("Started!!!")}}\n  onStop={function(){console.log("Stop!!!")}}\n  onSlideMin ={function(pos){console.log(pos)}}\n  onSlideMax ={function(pos){console.log(pos)}}\n>\n  <div style={\n    {\n      border: \'1px solid #aaa\',\n      background: \'#fff\',\n      borderRadius: \'100%\',\n      boxShadow: \'0 2px 4px rgba(0,0,0,0.1)\',\n      cursor: \'pointer\',\n      height: 24,\n      outline: \'none\',\n      width: 24,\n    }\n  }></div>\n</RangeSlider>\n```\n\n## Test\n```\n$ npm test\n```\n## Build\n```\n$ npm run build\n```\n\n## Related\n- [react-slider](https://github.com/joegesualdo/react-slider) - A slider\n\n## License\nMIT © [Joe Gesualdo]()\n',
+25 silly publish   readmeFilename: 'readme.md',
+25 silly publish   gitHead: '846306123b1d95f2d64056d94a5f8a5d9c0817cf',
+25 silly publish   bugs: { url: 'https://github.com/joegesualdo/react-range-slider/issues' },
+25 silly publish   homepage: 'https://github.com/joegesualdo/react-range-slider#readme',
+25 silly publish   _id: '@joegesualdo/react-range-slider@0.0.1',
+25 silly publish   _shasum: '72119b9df7790a6c118343436438bf5cdc53e153',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @joegesualdo/react-range-slider
+28 silly mapToRegistry scope (from package name) @joegesualdo
+29 verbose mapToRegistry no registry URL found in name for scope @joegesualdo
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@joegesualdo/react-range-slider',
+32 silly mapToRegistry   scope: '@joegesualdo',
+32 silly mapToRegistry   name: '@joegesualdo/react-range-slider',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/@joegesualdo%2freact-range-slider
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/jgesualdo/.npm/@joegesualdo/react-range-slider/0.0.1/package.tgz
+36 verbose request uri https://registry.npmjs.org/@joegesualdo%2freact-range-slider
+37 verbose request sending authorization for write operation
+38 info attempt registry request try #1 at 2:34:27 PM
+39 verbose request using bearer token for auth
+40 verbose request id b376cbf9a0d1d72b
+41 http request PUT https://registry.npmjs.org/@joegesualdo%2freact-range-slider
+42 http 403 https://registry.npmjs.org/@joegesualdo%2freact-range-slider
+43 verbose headers { 'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=0',
+43 verbose headers   'content-length': '95',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Fri, 22 Jul 2016 18:34:29 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-iad2640-IAD',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1469212468.056845,VS0,VE1307' }
+44 verbose request invalidating /Users/jgesualdo/.npm/registry.npmjs.org/_40joegesualdo_252freact-range-slider on PUT
+45 error publish Failed PUT 403
+46 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : @joegesualdo/react-range-slider
+46 verbose stack     at makeError (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+46 verbose stack     at Request._callback (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+46 verbose stack     at Request.self.callback (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:200:22)
+46 verbose stack     at emitTwo (events.js:106:13)
+46 verbose stack     at Request.emit (events.js:191:7)
+46 verbose stack     at Request.<anonymous> (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+46 verbose stack     at emitOne (events.js:101:20)
+46 verbose stack     at Request.emit (events.js:188:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/Users/jgesualdo/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:988:12)
+47 verbose statusCode 403
+48 verbose pkgid @joegesualdo/react-range-slider
+49 verbose cwd /Users/jgesualdo/code/node/modules/react-range-slider
+50 error Darwin 15.6.0
+51 error argv "/usr/local/Cellar/node/6.2.1/bin/node" "/Users/jgesualdo/.npm-packages/bin/npm" "publish"
+52 error node v6.2.1
+53 error npm  v3.9.6
+54 error code E403
+55 error "You cannot publish over the previously published version 0.0.1." : @joegesualdo/react-range-slider
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
