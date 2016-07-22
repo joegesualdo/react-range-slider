@@ -16,6 +16,8 @@ import RangeSlider from '@joegesualdo/react/range-slider'
   width={300}
   lineColor='blue'
   leftColor='black'
+  maxPosition={20}
+  minPosition={60}
   rightColor='black'
   onStart={function(){console.log("Started!!!")}}
   onStop={function(){console.log("Stop!!!")}}

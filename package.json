@@ -30,7 +30,7 @@
     "@joegesualdo/ava-react": "^0.0.4"
   },
   "dependencies": {
-    "@joegesualdo/react-slider": "0.0.1",
+    "@joegesualdo/react-slider": "0.0.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
